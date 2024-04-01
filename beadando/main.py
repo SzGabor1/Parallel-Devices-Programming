@@ -11,7 +11,7 @@ def main():
     
     def read_image_as_matrix(image_path):
         image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-        return image.astype(np.float32) 
+        return image.astype(float) 
     
     # Function to find similar images in a folder
 
