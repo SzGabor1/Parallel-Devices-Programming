@@ -13,20 +13,20 @@ def main():
         image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
         return image.astype(float) 
     
-    # Function to find similar images in a folder
+
 
 
     def load_images(image_folder):
         images = os.listdir(image_folder)
         img_arr = []
         img_paths = []
-        loaded_images = set()  # Set to keep track of loaded image filenames
+        loaded_images = set() 
 
         for i in range(len(images)):
-            if images[i] not in loaded_images:  # Check if the image has already been loaded
+            if images[i] not in loaded_images:
                 img_arr.append(read_image_as_matrix(os.path.join(image_folder, images[i])))
                 img_paths.append(os.path.join(image_folder, images[i]))
-                loaded_images.add(images[i])  # Add the image filename to the set of loaded images
+                loaded_images.add(images[i]) 
 
         print("LOADED IMAGES")
         return img_arr, img_paths
