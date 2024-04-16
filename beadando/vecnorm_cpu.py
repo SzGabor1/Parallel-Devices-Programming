@@ -50,6 +50,7 @@ def calculate_difference_cpu(image_matrix1, image_matrix2):
     overall_similarity_percentage = np.mean(similarity_percentage)
     
     print("Overall percentage similarity between the norms:", overall_similarity_percentage, "%")
+    print("CPU runtime:", total_runtime, "ms")
     return total_runtime
 
 # def read_image_as_matrix():

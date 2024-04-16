@@ -81,6 +81,7 @@ def calculate_difference(image_matrix1, image_matrix2):
     overall_similarity_percentage = np.mean(similarity_percentage)
     
     print("Overall percentage similarity between the norms:", overall_similarity_percentage, "%")
+    print("GPU runtime:", total_runtime / 1e6, "ms")
     return total_runtime
 
 # def read_image_as_matrix():
