@@ -24,7 +24,7 @@ The task is divided into two parts:
    - Considers images identical if identical values appear in a row but in a different order.
    - Potential solutions include processing by columns or examining images using the pixel-by-pixel comparison approach after achieving 100% similarity.
 
-![Vecnorm Runtime Graph]([https://github.com/SzGabor1/Parallel-Devices-Programming/blob/main/beadando/runtime.png](https://github.com/SzGabor1/Parallel-Devices-Programming/blob/main/beadando/vec_runtime.png))
+![Vecnorm Runtime Graph](https://github.com/SzGabor1/Parallel-Devices-Programming/blob/main/beadando/vec_runtime.png)
 
 ## Pros and Cons
 
